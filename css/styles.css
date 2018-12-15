@@ -169,3 +169,24 @@ body {
   outline: 10px solid #d3325f;
   outline-offset: 0.5rem;
 }
+
+/* ##### Menu section ##### */
+#menu {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../img/background_2.jpg) center/cover fixed no-repeat;
+}
+
+.special {
+  border: 3px solid #d3325f;
+  position: relative;
+}
+.special-text {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  background: #d3325f;
+  padding: 0 0.4rem;
+}
