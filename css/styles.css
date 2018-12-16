@@ -67,15 +67,16 @@ body {
 }
 
 .main-btn {
-  color: #d4425f;
+  color: #5f5e5a;
   font-size: 2rem;
-  border: 2px dotted #c9c1ac;
+  font-weight: bold;
+  border: 3px solid #d4425f;
   transition: all 0.3s ease-in-out;
   outline: none;
 }
 .main-btn:hover {
-  color: #c9c1ac;
-  border: 2px solid #d4425f;
+  color: #d4425f;
+  border: 3px dotted #c9c1ac;
   /* background: rgba(255,255,255, 0.4); */
 }
 .sushi-btn {
@@ -190,3 +191,77 @@ body {
   background: #d3325f;
   padding: 0 0.4rem;
 }
+
+/* ##### about section ##### */
+.about-pictures {
+  position: relative;
+}
+
+.about-image {
+  position: absolute;
+  width: 150px;
+  transition: all 1s ease-in-out;
+  opacity: 0.9;
+}
+
+.img-1 {
+  left: 20%;
+  top: 20%;
+  z-index: 10;
+}
+.img-2 {
+  left: 0%;
+  top: 0%;
+}
+.img-3 {
+  left: 40%;
+  top: 45%;
+  z-index: 20;
+}
+.img-4 {
+  left: 40%;
+  top: 0%;
+}
+.img-5 {
+  left: 0%;
+  top: 45%;
+}
+
+.img-1:hover {
+  outline: 10px solid #d3325f;
+  outline-offset: 0.5rem;
+  transform: scale(1.2);
+  z-index: 30;
+  opacity: 1;
+}
+.img-2:hover,
+.img-5:hover {
+  outline: 10px solid #d3325f;
+  outline-offset: 0.5rem;
+  transform: scale(1.2) rotate(-20deg);
+  z-index: 30;
+  opacity: 1;
+}
+.img-3:hover,
+.img-4:hover {
+  outline: 10px solid #d3325f;
+  outline-offset: 0.5rem;
+  transform: scale(1.2) rotate(20deg);
+  z-index: 30;
+  opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover) {
+  opacity: 0.5;
+}
+
+/* ##### review section ##### */
+.review-item{
+  background: rgba(255,255,255,0.7);
+  clip-path:polygon()
+}
+
+.review-img {
+  width: 150px;
+}
+
